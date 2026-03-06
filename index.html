@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Dermalandia - Personalizirana nega kože</title>
+    <meta name="description"
+        content="Salon Dermalandia. Poglobljena dermadiagnostika obraza, personalizirani načrti neg, neinvazivne metode pomlajevanja. Kotnikova 5, Ljubljana.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Dermalandia</a>
+
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav_about">O NAS</a>
+                <a href="#services" data-i18n="nav_services">STORITVE</a>
+                <a href="#contact" data-i18n="nav_contact">KONTAKT</a>
+
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="sl">SL</button>
+                    <span>|</span>
+                    <button class="lang-btn" data-lang="hr">HR</button>
+                    <span>|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <a href="#services" class="btn btn-primary" data-i18n="nav_book">REZERVIRAJ TERMIN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">Personaliziran pristop k negi kože</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Poglobljena dermadiagnostika obraza, personalizirani
+                    načrti neg in neinvazivne metode pomlajevanja za vaš popoln sijaj.</p>
+                <a href="#services" class="btn btn-primary" data-i18n="hero_btn">NAŠE STORITVE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" data-i18n="section_services">Naše Storitve</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="glass-card" onclick="openModal('cat_1')">
+                    <i class="fa-solid fa-star card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_1">PONUDBA MESECA</h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_2')">
+                    <i class="fa-solid fa-hand-holding-heart card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_2">RE:HAIR TERAPIJA</h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_3')">
+                    <i class="fa-solid fa-face-smile-beam card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_3">NAPREDNE NEGE OBRAZA</h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_4')">
+                    <i class="fa-solid fa-wand-magic-sparkles card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_4">AVTORSKE NEGOVALNE NEGE OBRAZA
+                    </h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_5')">
+                    <i class="fa-solid fa-dna card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_5">PRO NEGE OBRAZA NA CELIČNI RAVNI
+                    </h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_6')">
+                    <i class="fa-solid fa-leaf card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_6">EPIGENETSKI ANTI-AGE PROGRAMI
+                    </h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_7')">
+                    <i class="fa-solid fa-eye card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_7">TREPALNICE</h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_8')">
+                    <i class="fa-solid fa-hand-sparkles card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_8">NOHTI</h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_9')">
+                    <i class="fa-solid fa-wind card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_9">MADEROTERAPIJA - ritka brez
+                        celulitka</h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+                <div class="glass-card" onclick="openModal('cat_10')">
+                    <i class="fa-solid fa-shoe-prints card-icon" style="color: var(--primary-color);"></i>
+                    <h3 class="card-title" style="font-size: 1.2rem;" data-i18n="cat_10">PEDIKURA - lepih nog na okrog
+                    </h3>
+                    <a href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                        class="btn btn-primary" style="margin-top: 15px;" data-i18n="btn_book_srv">NAROČI SE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-i18n="about_title">Naša Ekipa</h2>
+                    <p data-i18n="about_p1">V Salonu Dermalandia verjamemo v personaliziran pristop. Naša vodilna
+                        strokovnjakinja, Nina I. Hribar, se posveča vsakemu obiskovalcu z individualnim načrtom nege.
+                    </p>
+                    <p data-i18n="about_p2">Z uporabo neinvazivnih metod pomlajevanja in vrhunske kozmetike poskrbimo,
+                        da se v svoji koži počutite odlično in samozavestno.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://www.myplanly.com/userimages/de5101eb-cc01-41e1-8247-945a429b53e1.jpg"
+                        alt="Salon Dermalandia - Nina I. Hribar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="section_contact">Kako do nas</h2>
+            <br>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 300;" data-i18n="visit_us">Nas želiš
+                obiskati?</h3>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+                <i class="fa-solid fa-location-dot" style="color: var(--primary-color); margin-right: 10px;"></i>
+                <span data-i18n="address">Kotnikova 5, zunanja stran stavbe pri rentgenu, 1000 Ljubljana</span>
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kotnikova+5,+1000+Ljubljana" target="_blank"
+                class="btn btn-primary">GOOGLE MAPS</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <h3>Salon Dermalandia</h3>
+                <p>Nina I. Hribar</p>
+                <p>Ljubljana, Slovenia</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Intensio d.o.o.</p>
+                <a href="https://www.myplanly.com/politika-zasebnosti" target="_blank"
+                    data-i18n="footer_privacy">Politika zasebnosti</a>
+                <a href="https://www.myplanly.com/splosni-pogoji" target="_blank" data-i18n="footer_terms">Splošni
+                    pogoji</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="serviceModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <i id="modalIcon" class="fa-solid fa-star card-icon" style="color: var(--primary-color);"></i>
+                <h2 id="modalTitle" class="modal-title">Naslov Storitve</h2>
+                <div id="modalDesc" class="modal-desc">Podrobnejši opis storitve s specifikacijami in ceno...</div>
+                <a id="modalBookBtn" href="https://www.myplanly.com/Estetika-nillandia/services" target="_blank"
+                    class="btn btn-primary" style="margin-top: 20px;" data-i18n="btn_book_srv">NAROČI SE</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
